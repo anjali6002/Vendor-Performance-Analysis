@@ -8,6 +8,12 @@ This project is a complete end-to-end data analytics solution focused on evaluat
 
 The key objective is to provide a 360-degree view of vendor performance, covering financial metrics, logistical efficiency, and inventory management.
 
+### **Final Dashboard** 📊
+
+The final outcome of this project is a dynamic dashboard built to provide key business insights at a glance. It summarizes complex data into intuitive visualizations, enabling stakeholders to make data-driven decisions.
+
+-----
+
 ### **Problem Statement**
 
 In a fast-paced retail environment, understanding vendor performance is critical for maximizing profitability and optimizing the supply chain. Raw transactional data is often fragmented, incomplete, and too large to analyze directly. This project addresses these challenges by building a robust data pipeline that:
@@ -16,6 +22,8 @@ In a fast-paced retail environment, understanding vendor performance is critical
   * Cleans and consolidates data from multiple sources.
   * Calculates key performance indicators (KPIs) to measure vendor health.
   * Delivers a dynamic dashboard for data-driven decision-making.
+
+-----
 
 ### **Project Structure**
 
@@ -47,6 +55,8 @@ The project is organized into three main phases, each represented by a Jupyter N
           * Create a range of professional visualizations, including bar charts and a correlation heatmap, to visually represent the findings.
           * Provide actionable business recommendations based on the data analysis, such as identifying opportunities for negotiation and inventory optimization.
 
+-----
+
 ### **Technology Stack**
 
   * **Languages**: Python
@@ -56,7 +66,9 @@ The project is organized into three main phases, each represented by a Jupyter N
       * `sqlite3`: To create and manage the local database.
       * `matplotlib` & `seaborn`: For data visualization.
   * **Database**: SQLite
-  * **Dashboarding**: Power BI
+  * **Dashboarding**: [Mention your BI tool here, e.g., Power BI, Tableau, Looker Studio]
+
+-----
 
 ### **Key Insights & Recommendations**
 
@@ -64,23 +76,42 @@ The project is organized into three main phases, each represented by a Jupyter N
   * **Inventory Efficiency**: Analyzed product turnover rates to pinpoint fast-moving items and optimize future purchasing decisions.
   * **Logistics**: Calculated the impact of freight costs per vendor, providing data-backed insights for future contract negotiations.
 
+-----
+
 ### **How to Run the Project**
 
-1.  **Clone the Repository**:
+This guide will walk you through setting up and running the project locally.
+
+#### **Step 1: Get the Project Files**
+
+1.  **Clone the Repository**
     ```bash
-    git clone https://github.com/YourUsername/YourProjectName.git
-    cd YourProjectName
+    git clone https://github.com/YourUsername/Vendor-Performance-Analysis.git
+    cd Vendor-Performance-Analysis
     ```
-2.  **Set up the Environment**:
-      * Install the required libraries:
-        ```bash
-        pip install pandas sqlalchemy matplotlib seaborn
-        ```
-      * Decompress the `data.rar` (or `data.zip`) file and place the contents in a `data/` directory.
-3.  **Run the Notebooks**:
-      * Execute `Data_Ingestion_and_Setup.ipynb` to create the database.
-      * Run `SQL_and_Pandas_Fusion_Analysis.ipynb` to create the summary table.
-      * Execute `Vendor_Analytics.ipynb` to perform the final analysis and generate insights.
-4.  **Connect to the Dashboard**:
-      * Connect your BI tool to the `inventory.db` file.
-      * Build the dashboard using the pre-aggregated `vendor_sales_summary` table.
+
+#### **Step 2: Prepare the Environment**
+
+1.  **Install Required Libraries**
+    ```bash
+    pip install pandas sqlalchemy matplotlib seaborn
+    ```
+2.  **Unzip the Data**
+      * Locate the `data.rar` (or `data.zip`) file in the repository.
+      * Decompress the file. It should create a `data/` folder containing all the raw CSV files.
+      * Place the `data/` folder at the root of the project directory.
+
+#### **Step 3: Execute the Data Pipeline**
+
+Run the notebooks in the following order to build the data pipeline:
+
+1.  Open and run `Data_Ingestion_and_Setup.ipynb`. This notebook will ingest the raw data and create the `inventory.db` file.
+2.  Next, open and run `SQL_and_Pandas_Fusion_Analysis`. This will execute the transformation logic and create the final `vendor_sales_summary` table in your database.
+3.  Finally, open and run `Vendor_Analytics.ipynb`. This notebook contains the analysis and visualization code.
+
+#### **Step 4: Connect to the Dashboard**
+
+1.  Open your BI tool
+2.  Connect to the `inventory.db` SQLite database file.
+3.  Load the **`vendor_sales_summary`** table.
+4.  You can now start building your dashboard using the pre-calculated metrics and dimensions from this table.
