@@ -11,6 +11,8 @@ The key objective is to provide a 360-degree view of vendor performance, coverin
 ### **Final Dashboard** 📊
 
 The final outcome of this project is a dynamic dashboard built to provide key business insights at a glance. It summarizes complex data into intuitive visualizations, enabling stakeholders to make data-driven decisions.
+<img width="885" height="495" alt="Screenshot (899)" src="https://github.com/user-attachments/assets/925493ec-199e-43b9-849b-eb9ec702202e" />
+
 
 -----
 
