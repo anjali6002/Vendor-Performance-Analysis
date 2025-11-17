@@ -68,7 +68,7 @@ The project is organized into three main phases, each represented by a Jupyter N
       * `sqlite3`: To create and manage the local database.
       * `matplotlib` & `seaborn`: For data visualization.
   * **Database**: SQLite
-  * **Dashboarding**: [Mention your BI tool here, e.g., Power BI, Tableau, Looker Studio]
+  * **Dashboarding**: Power BI
 
 -----
 
